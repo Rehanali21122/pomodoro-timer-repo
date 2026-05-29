@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pomodoro Timer</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="timer-styles.css">
+</head>
+<body class="mode-focus">
+
+  <main class="card" id="card">
+    <div class="mode-label" id="mode-label">Focus</div>
+    <div class="status" id="status">Ready</div>
+
+    <div class="ring-wrap">
+      <svg class="ring" viewBox="0 0 100 100">
+        <circle class="track"    cx="50" cy="50" r="44"></circle>
+        <circle class="progress" cx="50" cy="50" r="44" id="progress"></circle>
+      </svg>
+      <div class="countdown" id="countdown">25:00</div>
+    </div>
+
+    <div class="controls">
+      <button class="btn-primary" id="start-btn">Start</button>
+      <button class="btn-ghost"   id="reset-btn">Reset</button>
+    </div>
+
+    <div class="settings">
+      <div class="field">
+        <label for="focus-input">Focus (min)</label>
+        <input type="number" id="focus-input" min="1" max="120" value="25">
+      </div>
+      <div class="field">
+        <label for="break-input">Break (min)</label>
+        <input type="number" id="break-input" min="1" max="60" value="5">
+      </div>
+    </div>
+  </main>
+
+  <section class="history">
+    <h2>Today's focus sessions <span id="history-summary"></span></h2>
+    <ul id="history-list"></ul>
+  </section>
+</body>
+<script src="timer.js"></script>
+</html>
