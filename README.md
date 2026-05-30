@@ -1,31 +1,31 @@
-# Pomodoro Timer
+Pomodoro Timer :-
 
-A single-screen Pomodoro timer built with **vanilla HTML, CSS, and JavaScript** — no
+A single-screen Pomodoro timer built with "vanilla HTML, CSS, and JavaScript". no
 framework, no build step, no dependencies. Focus and break lengths are configurable,
-the timer chimes when a phase ends and automatically rolls into the next one, and every
-focus session you complete today is saved and listed below the clock.
+the timer chimes when a phase ends and automatically rolls into the next phase, and every
+focus session you complete today is saved and listed below the clock. 
 
-## Features
+Features :-
 
-- Start / pause / resume / reset
-- `mm:ss` countdown with a circular SVG progress ring
-- Configurable focus & break lengths (defaults: 25 / 5 minutes) — saved between visits
-- Audible chime on phase end (Web Audio API — no sound file needed)
-- Automatic focus → break → focus cycling
-- "Session done" moment: ring fills, card pulses, chime plays
-- Daily history saved in `localStorage` — survives reload, resets on a new calendar day
-- Colour-coded states: focus = warm coral, break = teal, paused = dimmed
-- Fully responsive from 360 px phones to large desktops
+ Start / pause / resume / reset
+ mm:ss countdown with a circular SVG progress ring
+ Configurable focus & break lengths (defaults: 25 / 5 minutes)
+ Audible chime on phase end (Web Audio API... No sound file needed)
+ Automatic focus ... break ... focus cycling
+ "Session done" moment: ring fills, card pulses, chime plays
+ Daily history, saved in localStorage, survives reload, resets on a new calendar day
+ Fully responsive from 360 px phones to large desktops.
+ (Even I checked the responsiveness by shrinking the width upto a small sized mobile...)
 
-## How to run
+How to run :-
 
-No installation needed. Two options:
+No installation needed:....
 
-**Option A — just open the file (quickest)**
+just open the file bu doublr clicking the index.html file and it will run properly in any modern browser.
 
-Double-click `index.html` — it opens directly in any modern browser.
+If you want to access more precisely then use this method:-(and I also got some help from AI to access thsi method)
 
-**Option B — local server (recommended)**
+local server....:-
 
 Running over `http://` makes `localStorage` and audio behave exactly like production:
 
@@ -36,11 +36,12 @@ python3 -m http.server 8000
 Then open <http://localhost:8000> in your browser.
 (`npx serve` also works if you have Node.)
 
-## Deployed
+Deployed link:-
 
-Live demo: **<ADD-YOUR-URL-HERE>**
+Live demo: <poetic-dolphin-1f6185.netlify.app>
 
-## Project structure
+Project structure:-
+I made this structure form Claude... providing it the path and then I simply copy pasted the path....
 
 ```
 pomodoro-timer/
@@ -51,9 +52,14 @@ pomodoro-timer/
 └── ANSWERS.md    # answers to the submission questions
 ```
 
-`index.html` links the other two files in the standard way:
+"index.html" links the other two files in the standard way:-
 
-```html
+<html>
+<head>
 <link rel="stylesheet" href="style.css">
+</head>
+<body>
 <script src="script.js" defer></script>
-```
+</body>
+</html>
+
