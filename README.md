@@ -38,7 +38,8 @@ Then open <http://localhost:8000> in your browser.
 
 Deployed link:-
 
-Live demo: <poetic-dolphin-1f6185.netlify.app>
+Live demo: <https://rehanali21122.github.io/pomodoro-timer-repo/
+>
 
 Project structure:-
 I made this structure form Claude... providing it the path and then I simply copy pasted the path....
