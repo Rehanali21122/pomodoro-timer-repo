@@ -18,7 +18,8 @@ python3 -m http.server 8000
 Then open <http://localhost:8000> in your browser.
 (`npx serve` also works if you have Node.)
 
-Deployed URL: <poetic-dolphin-1f6185.netlify.app>
+Deployed URL: <https://rehanali21122.github.io/pomodoro-timer-repo/
+>
 
 ---
 
